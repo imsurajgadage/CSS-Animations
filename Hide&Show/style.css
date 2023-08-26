@@ -1,0 +1,38 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #acd2fb;
+}
+
+.main-div {
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  background-color: #1380f5;
+  border-radius: 10px;
+  clip-path: circle(23.2% at 100% 0);
+  transition: all 0.5s;
+}
+.main-div h1 {
+  margin: 30px 0;
+  color: rgb(24, 241, 158);
+}
+
+.main-div p {
+  line-height: 150%;
+  color: white;
+}
+.main-div h3 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.main-div:hover {
+  clip-path: circle(141.4% at 100% 0);
+}

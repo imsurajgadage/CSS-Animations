@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magical background</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      animation: changingBg 10s linear infinite;
+    }
+    @keyframes changingBg {
+      0% {
+        background-color: #9c27b0;
+      }
+      20% {
+        background-color: #009688;
+      }
+      40% {
+        background-color: #2196f3;
+      }
+      60% {
+        background-color: #ff5722;
+      }
+      80% {
+        background-color: yellowgreen;
+      }
+      100% {
+        background-color: #9c27b0;
+      }
+    }
+  </style>
+  <body>
+    <h1>Hello, It's a magical background</h1>
+  </body>
+</html>
