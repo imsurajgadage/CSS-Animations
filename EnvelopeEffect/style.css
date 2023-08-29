@@ -1,0 +1,57 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  position: relative;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #073668;
+}
+
+a::before {
+  position: absolute;
+  content: "My Envelope";
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  top: 0%;
+  left: 0%;
+  background-color: #7a004b;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+a:hover::before {
+  transform: rotateX(0deg);
+}
+a::after {
+  position: absolute;
+  content: "My Envelope";
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  top: 0%;
+  left: 0%;
+  background-color: #026d40;
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+}
+a:hover::after {
+  transform: rotateX(0deg);
+}
