@@ -1,0 +1,26 @@
+If a color is used at 100 times in a project once we decide to change color we need to chnage ot at 100 Times
+
+Solution
+
+1. CSS Variables
+
+Syntax
+:root{
+--bgColor:white
+}
+
+--bgColor is acts as a variable
+
+To use That Variable
+E.g
+background: var(--bgColor)
+
+Overriding for particlaur Scenario/Case
+E.g:
+:root{
+--bgColor:white
+}
+h1{
+--bgColor:grey;
+background: var(--bgColor)
+}

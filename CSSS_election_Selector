@@ -1,0 +1,19 @@
+- once we select something fom website then its get highlighted we can update that with selection selector
+- We can Update only color backgroundColor Cursor & Outline
+
+Eg:-
+
+1. Universal Level
+
+   ::selectoin{
+   background:black;
+   color:white;
+   cursor:pointer;
+   }
+
+2. Element/Class Level
+
+   .heading::selection{
+   background:purple;
+   color:white;
+   }
